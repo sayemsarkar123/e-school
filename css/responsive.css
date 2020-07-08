@@ -379,4 +379,8 @@
   }
 }
 
-@media only screen and (min-width: 1199px) {}
+@media only screen and (min-width: 1199px) {
+  .course-footer .wrapper>span {
+    margin-left: 6px;
+  }
+}
