@@ -7,6 +7,53 @@ header {
   top: 25px;
   left: 0;
   width: 100%;
+  z-index: 1040;
+}
+
+.navbar-toggler-icon {
+  position: relative;
+}
+
+.navbar-toggler-icon>span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  background: #21b573;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon>span:first-child {
+  top: 25%;
+}
+
+.navbar-toggler-icon>span:last-child {
+  top: 75%;
+}
+
+.navbar-toggler-icon>span:nth-child(2) {
+  top: 50%;
+  width: 100%;
+}
+
+.navbar-toggler-icon:hover span:first-child {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.navbar-toggler-icon:hover span:last-child {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.navbar-toggler-icon:hover span:nth-child(2) {
+  width: 0;
+}
+
+.navbar-toggler:focus {
+  outline: 0;
 }
 
 .navbar-brand>img {
