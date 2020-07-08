@@ -1,0 +1,269 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+}
+
+.navbar-brand>img {
+  max-width: 198.07px;
+}
+
+.nav-item .nav-link {
+  padding: 5px !important;
+  font-size: 16px;
+  color: #000000 !important;
+  font-weight: 400;
+  font-family: "Poppins";
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-item:hover:not(:last-child) .nav-link {
+  color: #21B573 !important;
+}
+
+.nav-item:not(:last-child) .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: #21b573;
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.nav-item:hover:not(:last-child) .nav-link::before {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.nav-item:not(:first-child) {
+  margin-left: 25px;
+}
+
+.nav-item:last-child a {
+  padding: 12px 28px !important;
+  background: #21B573;
+  border-radius: 33px;
+  color: #fff !important;
+}
+
+.hero {
+  background: #F0FFF0;
+  padding: 178px 0 63px;
+}
+
+.hero h5 {
+  font-size: 16px;
+  color: #FD511A;
+}
+
+.hero h1 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 70px;
+  margin: 10px 0 19px;
+}
+
+.hero h1>span {
+  color: #21b573;
+}
+
+.hero p {
+  font-size: 16px;
+  line-height: 36px;
+  color: #6C6B6B;
+  margin-bottom: 14px;
+}
+
+.hero .hero-btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 36px;
+  background: #21B573;
+  border-radius: 33px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+
+.features {
+  padding: 42px 0 105px;
+}
+
+.features-card {
+  padding: 52px 46px 49px 45px;
+  background: #F8FFFB;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.features-card:hover {
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  background: #FFFFFF;
+}
+
+.features-card img {
+  max-width: 80px;
+}
+
+.features-card h3 {
+  font-size: 24px;
+  color: #413960;
+  font-weight: 500;
+  margin: 26px 0 14px;
+}
+
+.features-card h5 {
+  font-size: 16px;
+  color: #585859;
+  font-weight: 400;
+  margin: 0;
+}
+
+.course {
+  padding-bottom: 88px;
+}
+
+.course h2 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #413960;
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.course-card {
+  padding: 24px 20px 31px 19px;
+  border-radius: 18px;
+  background: rgba(205, 205, 205, 0.1);
+  transition: all 0.3s ease;
+}
+
+.course-card:hover {
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.course-card-img {
+  overflow: hidden;
+  border-radius: 11px;
+}
+
+.course-card-img img {
+  transition: all 0.3s ease;
+}
+
+.course-card:hover .course-card-img img {
+  transform: scale(1.1) rotate(4deg);
+}
+
+.course-card-body h3 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #413960;
+  margin: 19px 0 3px;
+}
+
+.course-card-body h5 {
+  font-size: 16px;
+  color: #585859;
+  margin: 0 0 19px;
+}
+
+.course-btn {
+  display: inline-block;
+  padding: 8px 28px;
+  font-size: 16px;
+  color: #ffffff !important;
+  font-weight: 400;
+  font-family: "Roboto";
+  background: #21B573;
+  border-radius: 33px;
+  text-decoration: none !important;
+  margin: 0 0 34px;
+}
+
+.course-footer .wrapper>img {
+  max-width: 24px;
+}
+
+.course-footer .wrapper>span {
+  margin-left: 6px;
+}
+
+.testimonial {
+  padding-bottom: 100px;
+}
+
+.testimonial h2 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.testimonial .review>img {
+  max-width: 120px;
+}
+
+.testimonial .review>p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  margin: 0 0 0 52px;
+}
+
+footer {
+  padding: 48px 0 27px;
+  background-color: #282531;
+}
+
+footer p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+footer h4 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-bottom: 18px;
+}
+
+.course-catagory {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.course-catagory li:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.course-catagory li a {
+  text-decoration: none !important;
+  font-size: 18px;
+  color: #FFFFFF !important;
+}
+
+.copyright {
+  font-size: 16px;
+  color: #CDCDCD;
+  margin: 76px 0 0;
+  line-height: unset;
+  text-align: center;
+}
